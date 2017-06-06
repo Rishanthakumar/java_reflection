@@ -18,6 +18,7 @@ public class Task1 {
             System.out.println(Modifier.toString(clazz.getModifiers())); // gets the modifier name --> public
             System.out.println(clazz.getDeclaredMethod("main", String[].class)); // gets the full name of the method with package name and modifiers --> public static void com.mtit.reflection.Task1.main(java.lang.String[])
             System.out.println(Modifier.toString(clazz.getDeclaredMethod("main", String[].class).getModifiers())); // gets the modifier of the method --> public static
+            System.out.println(clazz.getDeclaredMethod("main", String[].class).getName()); // gets the method name only.
         } catch (ClassNotFoundException | NoSuchMethodException e) {
             e.printStackTrace();
         }
