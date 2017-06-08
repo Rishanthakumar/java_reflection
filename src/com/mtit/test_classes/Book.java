@@ -18,4 +18,8 @@ public class Book {
     public Book(String bookName) {
         this.bookName = bookName;
     }
+
+    public void DisplayBookDetails() {
+        System.out.println("Book Name is "+ bookName);
+    }
 }
